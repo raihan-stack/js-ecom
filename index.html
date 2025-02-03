@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js e-com website</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="section-navbar">
+  <section class="top_txt">
+    <div class="head container">
+      <div class="head_txt">
+        <p>Free shipping, 30 -day return refund gurantee.</p>
+      </div>
+      <div class="sing_in_up">
+        <a href="#">SIGN IN</a>
+        <a href="#">
+SIGN UP
+      </a>
+        <a href="">
+
+      </a>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="index.html">
+      <img src="./public/images/log.png" alt="thapa eCommerce logo"
+      class="logo"
+      width="80"
+      height="auto"></a>
+    </div>
+<nav class="navbar">
+  <ul>
+    <li class="nav-item"> <a href="/" class="nav-link"> Home</a></li>
+
+    <li class="nav-item"> <a href="about.html" class="nav-link">about</a></li>
+
+    <li class="nav-item"> <a href="products.html" class="nav-link">products</a></li>
+
+    <li class="nav-item"> <a href="contact.html" class="nav-link">contact</a></li>
+
+    <li class="nav-item"> <a href="addToCart.html"  class="nav-link add-to-cart-button" id="cartValue" >
+      <i class="fa-solid fa-cart-shopping">0</i>
+    </a></li>
+  </ul>
+</nav>
+
+
+  </div>
+</div>
+</header>
+
+
+<!-- main section start -->
+
+<main>
+  <section class="section-hero">
+    <div class="container grid grid-two--cols">
+     <div class="hero-section--content">
+      <p class="hero-subheading">
+        Explore the latest in Tech
+       Industries</p>
+      <h1 class="hero-heading">
+        Your Destination for Cutting-Sdge Gadgets!
+      </h1>
+      <p class="hero-para"> welcome to Thapa eComStore , your ultimate destination for cutting-edge gadgets! Explore the latest in tech invocation and style with us. Shop now an d discover a world of possibilities</p>
+    
+
+      <div class="hero-btn"><a href="" class="btn">Explore Our products</a></div>
+     </div>
+
+     <div class="setion-hero-image" data-aos="fade-up" data-aos-delay="600">
+      <figure>
+        <img src="     ./public/images/heroSection.svg" alt=" coding languages using html css js">
+      </figure>
+     </div>
+
+    </div>
+    
+  </section>
+</main>
+<section class="section-extra-product">
+  <div class="container grid grid-three--cols">
+    <div class="div-extra grid grid-two--cols">
+      <div class="extra-text">
+        <p>new year sale</p>
+        <h3>get and extra 50%</h3>
+        <a href="#">shop now</a>
+      </div>
+      <div class="extra-img extra-laptop">
+        <img src="./public/images/laptop.png" alt="">
+      </div>
+    </div>
+    <div class="div-extra grid grid-two--cols">
+      <div class="extra-text">
+        <p>new year sale</p>
+        <h3>get and extra 50%</h3>
+        <a href="#">shop now</a>
+      </div>
+      <div class="extra-img extra-laptop">
+        <img src="./public/images/headphoneEcom.png" alt="">
+      </div>
+    </div>
+
+    <div class="div-extra grid grid-two--cols">
+      <div class="extra-text">
+        <p>new year sale</p>
+        <h3>get and extra 50%</h3>
+        <a href="#">shop now</a>
+      </div>
+      <div class="extra-img extra-laptop">
+        <img src="./public/images/mobiles.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-policy">
+  <div class="container grid grid-four--cols">
+   
+
+  <div class="div-policy">
+    <div class="icons">
+      <i class="fa-solid fa-truck-fast"></i>
+    </div>
+    <div class="div-policy-text">
+      <p>worldwide shipping</p>
+      <p>order above</p>
+    </div>
+  </div>
+
+  <div class="div-policy">
+    <div class="icons">
+      <i class="fa-solid fa-rotate"></i>
+    </div>
+    <div class="div-policy-text">
+      <p>worldwide shipping</p>
+      <p>order above</p>
+    </div>
+  </div>
+
+  <div class="div-policy">
+    <div class="icons">
+     
+      <i class="fa-solid fa-headset"></i>
+    </div>
+    <div class="div-policy-text">
+      <p>worldwide shipping</p>
+      <p>order above</p>
+    </div>
+    
+  </div>
+  <div class="div-policy">
+    <div class="icons">
+      <i class="fa-solid fa-hand-holding-dollar"></i>
+    </div>
+    <div class="div-policy-text">
+      <p>worldwide shipping</p>
+      <p>order above</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="section-products">
+  <div class="container">
+    <h2 class="section-common--heading">checkout thapa store</h2>
+    <section class="container">
+      <div id="productContainer">
+
+      </div>
+    </section>
+  </div>
+</section>
+
+
+<template id="productTemplate">
+  <div class="cards" id="cardValue">
+    <article class="infomation" card="">
+      <span class="category"></span>
+      <div class="imageContaiiner"><img src="" alt="" class="productImage"></div>
+      <h2 class="productName"></h2>
+      <div class="productRating">
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+
+      <p class="productDesciption"></p>
+      <div class="productPriceElement">
+        <p class="productPrice"></p>
+        <p class="productActualPrice"></p>
+      </div>
+
+
+      <div class="productStockElement">
+        <p class="productProperty">
+          Total Stocks Available: </p>
+        <p class="productStock"></p>
+      </div>
+
+
+
+      <div class="productQuantityElement">
+        <p class="productProperty">Quantity(pieces)</p>
+        <div class="stockElement">
+          <button class="cardIncrement">+</button>
+          <p class="productQuantity">1</p>
+          <button class="cardDecrement">-</button>
+        </div>
+      </div>
+      <button class="add-to-card-button">
+        <i class="fa-solid fa-cart-shopping"> add to Card</i>
+      </button>
+    </article>
+  </div>
+</template>
+
+
+
+
+
+
+
+<footer class="footer footer-center bg-base-300 text-base-content p-4">
+  <aside>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+  </aside>
+</footer>
+
+
+<script type="module" src="./main.js"></script>
+
+</body>
+</html>
