@@ -1,4 +1,7 @@
-import { updateCard } from "./js-project-2/updateCard"
+// import { updateCard } from "./js-project-2/updateCard"
+
+import { updateCard } from "./updateCard"
+
 
 export const getCardFromLs =()=>{
    let cardProducts = localStorage.getItem("cardProductsLs")
@@ -15,5 +18,8 @@ export const getCardFromLs =()=>{
        }
     }
     updateCard(cardProducts)
+//    const fasolid = document.querySelector(".fa-solid")
+//  fasolid.innerText = cardProducts.length
+   updateCard(cardProducts)
 return cardProducts 
 }
