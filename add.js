@@ -27,7 +27,7 @@ const localStorageCard =getCardFromLs()
 )
 
 if( existing && productQuantity >1){
-    
+     
     
     productQuantity = Number(existing.productQuantity + productQuantity)
  
