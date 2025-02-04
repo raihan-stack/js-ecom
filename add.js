@@ -1,5 +1,6 @@
 
 import { getCardFromLs } from "./getCardfromLs"
+import { showToast } from "./toast"
 
 
 
@@ -40,7 +41,7 @@ if( existing && productQuantity >1){
 
     localStorage.setItem("cardProductsLs",JSON.stringify(updateCart))
 
-
+    showToast("add", id)
 
 } 
 else{
@@ -60,6 +61,7 @@ localStorage.setItem("cardProductsLs",JSON.stringify(localStorageCard))
 
 
 
+showToast("add", id)
 
 
 console.log(localStorage)

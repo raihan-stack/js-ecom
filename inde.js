@@ -2,11 +2,15 @@ import { getCardFromLs } from "./getCardfromLs";
 import { total } from "./totat";
 
 
-total()
+total() 
+
+
+
 
 export const incrementDecrement=(event, id,  price,stoke)=>{
     const cardElmId =document.querySelector( `#card${id}`)
     console.log(cardElmId)
+    total()
 
 const productPrice = cardElmId.querySelector(".productPrice")
     const productQuantity = cardElmId.querySelector(".productQuantity")

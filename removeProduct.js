@@ -1,4 +1,6 @@
 import { getCardFromLs } from "./getCardfromLs"
+import { showToast } from "./toast"
+import { total } from "./totat"
 import { updateCard } from "./updateCard"
 
 
@@ -13,6 +15,8 @@ console.log(id)
   console.log(remove)
   if(remove){
     remove.remove()
+    total()
+    showToast("delete", id)
   }
 
   updateCard(card)
